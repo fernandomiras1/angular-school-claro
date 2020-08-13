@@ -3,9 +3,11 @@
 <div class="container">
     <div class="contacts-list">
         <app-contact *ngFor="let contact of contacts"
+            [appHighlight]="contctsService.selectedContact?.id === contact.id"
             [contact]="contact"
             (clicked)="onContactSelected($event)">
         </app-contact>
     </div>
-</div>
 
+    <app-contact-detail></app-contact-detail>
+</div>

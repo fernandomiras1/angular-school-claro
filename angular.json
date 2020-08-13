@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-school-claro"
+    }
+  },
+  "defaultProject": "angular-school-claro",
+  "cli": {
+    "analytics": false
+  }
 }

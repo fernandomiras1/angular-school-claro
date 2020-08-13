@@ -1,0 +1,10 @@
+
+<ng-container *ngIf="contactsService.selectedContact">
+
+  <app-contact [contact]="contactsService.selectedContact"
+    [appHighlight]="contactsService.selectedContact"
+    [color]="'#FEC1A6'"
+    [expanded]="true">
+  </app-contact>
+
+</ng-container>

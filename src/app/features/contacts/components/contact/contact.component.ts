@@ -9,7 +9,7 @@ import { Contact } from '../../models/contact.model';
 export class ContactComponent implements OnInit {
 
   @Input() contact: Contact;
-
+  @Input() expanded: boolean = false;
   @Output() clicked: EventEmitter<number> = new EventEmitter();
   constructor() { }
 
